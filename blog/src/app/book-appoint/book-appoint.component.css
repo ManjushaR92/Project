@@ -1,6 +1,6 @@
 
 .well-block {
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 221, 255));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 153, 105));
     border: 1px solid #df2ea4;
     padding: 40px;
 }
