@@ -1,0 +1,89 @@
+<div class="image" style="background-color: aliceblue;">
+
+   <section class="container wellness-section chart-section">
+
+      <h2 class="wellness-section-header text-center text-left-md mb-30">
+        <span class="wellness-section-header_grey">Your emotional well‑being</span> <br> <span class="wellness-section-header_black">can be measured</span>
+      </h2>
+      <div class="row justify-content-start justify-content-md-center">
+        <img class="chart-section__image" src="https://hpf-happify-marty-prod-user-uploads.happify.com/cms_uploads/en_US/img/localization_images/wellness_chart.png" alt="">
+        <img class="chart-section__image-mobile d-md-none" src="https://hpf-happify-marty-prod-user-uploads.happify.com/cms_uploads/en_US/img/localization_images/wellness_chart_mobile.png" alt="">
+      </div>
+  
+      <h3 class="text-center chart-section__h3 text-left-md">
+        Find out your happiness score and start improving it today.
+      </h3>
+      <p class="paragraph text-center text-left-md">
+        These results come directly from people who are experiencing the same issues as you. Complete a few activities each week to start seeing meaningful improvement in your life satisfaction and your ability to fight back against negativity.
+      </p>
+    </section>
+    <div class="container">
+      <div class="paragraph paragraph--type--text-with-image paragraph--view-mode--landing-page-text TextImage TextImage--right">
+        <div class="Textimage_container">
+          <div class="Textimage_title u-fg-akita">
+            <h1><strong>How can I improve my mental wellbeing? </strong></h1>
+          </div>
+          <div class="Textimage-content" >
+            <div class="lead">
+              <p style="font-size: large;">Being active for 30 minutes each day improves your physical health. The same goes for your mental health.By taking just a few minutes to focus on mental wellbeing activities each day, you’ll see big improvements.<br></p>
+              <p style="font-size: large;">It only takes a few small actions, practised every day, to find a happier you.</p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container">
+    <div class="paragraph paragraph--type--text-with-image paragraph--view-mode--landing-page-text TextImage TextImage--right">
+      <div class="Textimage_container">
+        <div class="Textimage_title u-fg-akita">
+          <h1><strong>How it works ? </strong></h1>
+        </div>
+        <div class="Textimage-content" >
+          <div class="lead">
+            <p style="font-size: large;">There isn't a one-size-fits-all solution to good mental health. That's why <strong>Roots and Wings</strong> provides a comprehensive set of customizable tools to help you learn and focus on what most affects your mood. Awareness plus good practices done regularly is how to create a better mood<br></p>
+            <p style="font-size: large;">It only takes a few small actions, practised every day, to find a happier you.</p>
+          </div>
+          <div class="row">
+            <img src="../../assets/cbt_cycle.png" alt="cycle" width="120" height="420">
+          </div>
+        
+        </div>
+      </div>
+    </div>
+</div>
+  <br>
+  <br>
+ 
+  <br>
+  <br>
+  <div class="row-col-sm-6 ">
+    <!-- <img src="../../assets/welltips.png" alt="img" width="320" height="220"> -->
+    <!-- <img src="../../assets/medineed.png" width="320" height="320"> -->
+   
+    <div class=" offset-sm-2 col-sm-8">
+      <div class="card" style="background-color: transparent;">
+        <div class="card-body bg-text">
+          <a *ngFor="let blog of blogs" href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <h2 class="mb-1" class="card-title">{{blog.title}}</h2>
+            <small>3 days ago</small>
+            <p class="mb-1" class="card-text">{{blog.body}}</p>
+            <div class="panel-footer" class="card-author">
+              <p class="mb-1"><strong>{{blog.author}}</strong></p>
+              <br>
+              <br>
+             </div>
+             <button class="btn btn-warning" style="cursor:pointer" *ngIf="_auth.loggedIn()"  (click)="editBlog(blog)"  style="margin-left: 20px;"> Edit</button>
+             <button class="btn btn-danger" style="cursor:pointer" *ngIf="_auth.loggedIn()" (click)="deleteBlog(blog)" style="margin-left: 10px;"> Delete</button>
+              </a>
+             </div>
+            </div>
+</div>
+<br>
+<br>
+<br>
+
+
+           
+         
+

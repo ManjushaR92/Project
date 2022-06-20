@@ -1,0 +1,20 @@
+.Textimage_image{
+    margin-top: 0px;
+}
+div {
+    display: block;
+}
+.card-body{
+    background-image: url(../../assets/tp1.jpg);
+    box-shadow: 2px;
+}
+.card-text{
+color: rgb(1, 73, 17);
+}
+.card-title{
+    color: brown;
+}
+.card-author{
+    color: black;
+    font-weight: 100;
+}

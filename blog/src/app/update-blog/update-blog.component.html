@@ -1,0 +1,55 @@
+<div class="image">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-8 col-md-offset-2 title">
+                
+                <h1>Edit Blog</h1>
+                
+                <form  (ngSubmit)="editBlog()">
+                    
+                    <div class="form-group" id="bform">
+                        <label for="title">Title <span class="require">*</span></label>
+                        <input type="text" class="form-control" name="title" [(ngModel)]='blogItem.title' />
+                    </div>
+                    
+                    <div class="form-group" id="bform">
+                        <label for="author">Author <span class="require">*</span></label>
+                        <input type="text" class="form-control" name="author" [(ngModel)]='blogItem.author' />
+                    </div>
+
+                    <div class="form-group" id="bform">
+                        <label for="description">Description</label>
+                        <textarea rows="15" class="form-control" name="body" [(ngModel)]='blogItem.body'></textarea>
+                    </div>
+                    
+                    <div class="form-group" id="bform">
+                        <p><span class="require">*</span> - required fields</p>
+                    </div>
+                    
+                    
+                        <button type="submit" class="btn btn-warning" id="submitf">
+                            Edit
+                        </button>
+                  
+                    </form>
+            </div>
+            
+        </div>
+    </div>
+
+        <br>
+    
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,56 @@
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.sectionLinks .container{
+    padding-top: 32px;
+    padding-right: 26px;
+    padding-bottom: 32px;
+    padding-left: 26px;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-left: auto;
+}
+.sectionLinks{
+    -webkit-text-size-adjust: 100%;
+    background-color: rgb(211, 213, 207);
+    
+} x 
+.green-dash{
+    background: #94d400;
+    width: 80px;
+    height: 3px;
+    display: block;
+    margin: 30px 0
+
+}
+.heading{
+    color: #4a4a4a ;
+    text-transform: capitalize;
+    font: 36px/38px "MuseoSlab-700",Helvetica,Arial,sans-serif;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.container{
+    box-sizing:border-box;
+    color: rgb(68, 41, 5);
+        width: 75%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      
+}

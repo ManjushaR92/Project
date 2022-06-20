@@ -1,0 +1,10 @@
+
+.well-block {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 221, 255));
+    border: 1px solid #df2ea4;
+    padding: 40px;
+}
+
+.well-title {
+    margin-bottom: 40px;
+}

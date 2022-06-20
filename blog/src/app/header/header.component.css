@@ -1,0 +1,7 @@
+.container-fluid{
+    background-image: url(../../assets/bg3.jpg);
+    background-size: cover;
+}
+.nav-link{
+    color: white;
+}

@@ -1,0 +1,60 @@
+<!-- navbar brand and logo start -->
+<nav class="navbar navbar-expand-lg" style="background-image:url(../../assets/bg3.jpg)">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: white;"   routerLink="" routerLinkActive="active">
+        <img src="../../assets/Roots_to_Wings_Logo_Icon_Teal-Brown.png" alt="" width="50" height="40" class="d-inline-block align-text-center">
+        Roots and Wings
+      </a>
+<!-- navbar logo and brand ends here -->
+
+<!-- aboutus nav start -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="aboutus">Who are we?</a>
+  </li>
+  <!-- ends here -->
+
+  <!-- need help navbar starts here  -->
+  <li class="nav-item">
+    <a class="nav-link" routerLink="needhelp">Need help?</a>
+  </li>
+
+   <!-- bloglist page starts here  -->
+   <li class="nav-item">
+    <a class="nav-link" routerLink="bloglist" >Blog</a>
+  </li>
+  <!-- bloglist page ends here -->
+
+  <!-- blog page starts here  -->
+  <li class="nav-item">
+    <a class="nav-link" routerLink="addblog" *ngIf="_auth.loggedIn()">Add Blog</a>
+  </li>
+  <!-- blog page ends here -->
+  </ul>
+  <!-- ends here -->
+  <ul class ="nav  navbar-right">
+  <!-- login starts here -->
+  <li class="nav-item">
+    <a class="nav-link" routerLink="login" *ngIf="!_auth.loggedIn()" routerLinkActive="active"><span class="glyphicon glyphicon-log-in" style="margin-left: 20px;"></span>  Login</a>
+  </li>
+  <!-- ends here -->
+ 
+ 
+ 
+ 
+  <!-- ends here -->
+   <!-- book appointment -->
+   <li class="nav-item">
+    <a class="nav-link" routerLink="book" > <span class="glyphicon glyphicon-calendar" ></span>Book Therapist</a>
+  </li>
+<!-- ends here -->
+  <li class="nav-item">
+    <a class="nav-link" routerLink="mainpage"*ngIf="_auth.loggedIn()" (click)="logoutUser()"><span class="glyphicon glyphicon-log-out" style="margin-left: 20px;"></span>Logout</a>
+  </li>
+</ul>
+  </div>
+  </div>
+  </nav>
+  <div>
+      <!-- navbar ends here -->
