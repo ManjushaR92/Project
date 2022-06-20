@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogModel } from '../bloglist/blog.model';
+import { BlogModel } from './blog.model';
 import { BloglistService } from '../bloglist.service';
 import { Router , CanActivate} from '@angular/router';
 import { AuthService } from '../auth.service';
