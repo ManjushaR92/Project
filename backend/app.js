@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser'); 
-const Bloglist = require('../database/models/BlogModel');
+const Bloglist = require('./database/models/BlogModel');
 username='admin';
 password='12345';
 
