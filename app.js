@@ -33,7 +33,14 @@ function verifyToken(req, res, next) {
     next()
   }
 
-
+  app.get('/',function(req,res){
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  Bloglist.find()
+                .then(function(blogdata){
+                    res.send(blogdata);
+                });
+});
 
 app.post('/insert',verifyToken,function(req,res){
     res.header("Access-Control-Allow-Origin", "*");
