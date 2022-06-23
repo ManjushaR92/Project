@@ -34,8 +34,7 @@ function verifyToken(req, res, next) {
   }
 
 app.post('/insert',verifyToken,function(req,res){
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+   
    console.log(req.body);
 
     var blogs = {
@@ -51,8 +50,7 @@ app.post('/insert',verifyToken,function(req,res){
 
 
 app.get('/bloglist',function(req,res){
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+   
     Bloglist.find()
             .then(function(blogdata){
                 res.send(blogdata);
@@ -89,6 +87,7 @@ app.get('/:id',  (req, res) => {
 //   router to update bloglist
   app.put('/update/:id',(req,res)=>{
     console.log(req.body)
+    id=req.body._id
    title= req.body.title,
     author = req.body.author,
     body = req.body.body,
