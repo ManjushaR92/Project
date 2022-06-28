@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 
 app.get('*',(req,res)=>{
-  res.sendFile('index.html',{root: `./blog/dist/`});
+  res.sendFile( `./blog/src/index.html`)
 });
 
 
