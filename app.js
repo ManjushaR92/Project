@@ -18,10 +18,6 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 
-app.get('/mainpage',(req,res)=>{
-  res.sendFile( `./blog/src/index.html`)
-});
-
 
 function verifyToken(req, res, next) {
     if(!req.headers.authorization) {
