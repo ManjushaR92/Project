@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser'); 
@@ -6,12 +7,12 @@ const Bloglist = require('./database/models/BlogModel');
 username='admin';
 password='12345';
 
-const path = require ('path'); 
+
 
 
 const app = new express();
 
-app.use(express.static(path.join(__dirname ,'/blog/src/'))); 
+app.use(express.static(path.join(__dirname ,'/blog/src/index.html'))); 
 app.use(express.urlencoded({extended:true})); 
 app.use(cors());
 app.use(express.json());
