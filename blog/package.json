@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild": "npm install --prefix blog && npm run build --prefix blog" 
+    "heroku-postbuild": "npm install --prefix project && npm run build --prefix project" 
   },
   "private": true,
   "dependencies": {
