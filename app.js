@@ -11,11 +11,16 @@ const path = require ('path');
 
 const app = new express();
 
-app.use(express.static(path.join(__dirname ,'/dist'))); 
+app.use(express.static(path.join(__dirname ,'/blog/dist'))); 
 app.use(express.urlencoded({extended:true})); 
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
+
+
+app.get('/',(req,res)=>{
+  res.sendFile('index.html',{root: `./blog/dist/`});
+});
 
 
 function verifyToken(req, res, next) {
