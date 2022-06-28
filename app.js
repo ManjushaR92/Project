@@ -11,7 +11,7 @@ const path = require ('path');
 
 const app = new express();
 
-app.use(express.static(path.join(__dirname ,'/blog/dist/out-tsc/main.js'))); 
+app.use(express.static(path.join(__dirname ,'/dist'))); 
 app.use(express.urlencoded({extended:true})); 
 app.use(cors());
 app.use(express.json());
