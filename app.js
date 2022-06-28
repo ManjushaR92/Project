@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 
-app.get('*',(req,res)=>{
+app.get('/mainpage',(req,res)=>{
   res.sendFile( `./blog/src/index.html`)
 });
 
