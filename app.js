@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 
-app.get('/',(req,res)=>{
+app.get('*',(req,res)=>{
   res.sendFile('index.html',{root: `./blog/dist/`});
 });
 
