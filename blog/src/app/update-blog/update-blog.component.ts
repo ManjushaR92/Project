@@ -22,7 +22,7 @@ export class UpdateBlogComponent implements OnInit {
   }
 editBlog()
 {
-this.bloglistService.editBlog(this.blogItem);
+this.bloglistService.editBlogId(this.blogItem);
 alert("success");
 this.router.navigate(['/update:id']);
 }

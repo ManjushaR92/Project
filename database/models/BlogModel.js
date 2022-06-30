@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(
-  process.env.MONGODB_URI ||'mongodb+srv://userone:userone@group4.2qd1x.mongodb.net/GROUP4?retryWrites=true&w=majority',{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+mongoose.connect('mongodb+srv://userone:userone@group4.2qd1x.mongodb.net/GROUP4?retryWrites=true&w=majority')
 .then(()=> console.log(" connected"))
 .catch((error)=>console.log(error));
 
