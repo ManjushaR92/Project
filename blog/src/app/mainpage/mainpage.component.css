@@ -1,4 +1,6 @@
-
+.container-fluid{
+   
+}
 .carousel-inner{
     width:1400px;
    height: 700px !important ;
@@ -18,8 +20,8 @@
     font-size: 400%;
     align-content: center;
     color:rgb(19, 63, 19);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-shadow: 2px 2px 4px #000000;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
 }
 .carousel-caption p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -31,20 +33,15 @@
 
 .intro h1 {
     font-size: 400%;
-    color: rgb(214, 235, 24);
+    color: rgb(0, 69, 130);
     margin-left: 100px;
-    text-shadow: 2px 2px 4px #000000;
 }
 .intro p{
-    color: rgb(17, 6, 161);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     margin-left: 100px;
     word-spacing: 2%;
     display: block;
        
-    
-}
-#para{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }

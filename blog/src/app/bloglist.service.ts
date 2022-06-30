@@ -30,7 +30,7 @@ deleteBlog(id:any)
   return this.http.delete("http://localhost:3000/remove/"+id)
 
 }
-editBlogId(blog:any)
+editBlog(blog:any)
   {
     console.log('client update')
     return this.http.put("http://localhost:3000/update/:id",blog)
