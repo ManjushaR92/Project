@@ -1,6 +1,4 @@
-.container-fluid{
-   
-}
+
 .carousel-inner{
     width:1400px;
    height: 700px !important ;
@@ -33,11 +31,12 @@
 
 .intro h1 {
     font-size: 400%;
-    color: rgb(0, 69, 130);
+    color: rgb(228, 232, 19);
     margin-left: 100px;
+    text-shadow: 2px 2px 4px #000000;
 }
 .intro p{
-    color: rgb(0, 0, 0);
+    color: rgba(62, 131, 19, 0.752);
     font-size: 18px;
     margin-left: 100px;
     word-spacing: 2%;
